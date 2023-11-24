@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="spinner-container" id="spinner">
+        <div class="spinner"></div>
+    </div>
+
+
+        <form action="" id = "form_principal" class = "form">
+    
+            <!---<label for="tipo">Filtrar por</label>
+            <select id="tipo" name="tipo">
+                <option value="todos">Todos</option>
+                <option value="empleado">Empleado</option>
+                <option value="cliente">Cliente</option>
+            </select>---> 
+    
+            <br />
+    
+            <!---<label for="textoPromedio">Calcular edad promedio:</label>
+            <label id="texto_promedio"></label>
+            <button class="btn" id="btn_calcular_promedio" 
+            onclick="calcularEdadPromedio()">Calcular</button>--->
+    
+            <br />  
+    
+            <!---<label>Mostrar columnas</label>
+            <br />
+            <input type="checkbox" id="id_checkbox" class="checkbox" checked>ID</input>
+            <input type="checkbox" id="nombre_checkbox" class="checkbox" checked>Nombre</input>
+            <input type="checkbox" id="apellido_checkbox" class="checkbox" checked>Apellido</input>
+            <input type="checkbox" id="edad_checkbox" class="checkbox" checked>Edad</input>
+            <input type="checkbox" id="sueldo_checkbox" class="checkbox" checked>Sueldo</input>
+            <input type="checkbox" id="ventas_checkbox" class="checkbox" checked>Ventas</input>
+            <input type="checkbox" id="compras_checkbox" class="checkbox" checked>Compras</input>
+            <input type="checkbox" id="telefono_checkbox" class="checkbox" checked>Telefono</input>-->
+    
+    
+            <table border="1" id="tablaDatos">
+                <thead>
+                    <tr>
+                        <th id="id_t">ID</th>
+                        <th>Modelo</th>
+                        <th>Año fabricacion</th>
+                        <th>Vel maxima</th>
+                        <th>Altura maxima</th>
+                        <th>Autonomia</th>
+                        <th>Cantidad puertas</th>
+                        <th>Cantidad ruedas</th>
+                        <th>Modificar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                
+                <tbody id="tablaCuerpo">
+                </tbody>
+                
+    
+            </table>
+
+            <br>
+            <button class="btn" id="btn_agregar_elemento">Agregar Elemento</button>
+        <!-- <button class="btn" id="btn_editar">Editar</button> -->
+         <!-- <button class="btn" id="btn_eliminar">Eliminar</button> -->
+    
+        </form>
+    
+
+    <br />
+    <br />
+
+
+        <form action="" id = "form_agregar" class = "form" style="display: none;">
+
+            <h1>Formulario ABM</h1>
+    
+            <!--<label id="label_select_id_editar">Persona a editar:</label>
+            <select id = "select_id_editar"> -->
+
+            <legend id="encabezado_form_abm">
+
+                ****************Alta****************
+
+                
+            </legend>
+
+            </select>
+            <label for="tipo" id="tipo_vehiculo_label">Tipo:</label>
+            <select id="tipo_agregar">
+                <option value="aereo">Aereo</option>
+                <option value="terrestre">Terrestre</option>
+            </select>
+
+            <div class="inputs_container"> 
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" name="modelo">
+    
+                
+                <label for="anoFab">Año fabricacion:</label>
+                <input type="number" id="anoFab" name="anoFab">
+    
+        
+        
+                <label for="velMax">Velocidad maxima:</label>
+                <input type="number" id="velMax" name="velMax">
+    
+                
+                <label for="altMax_agregar" id="altMax_agregar_label">Altura maxima:</label>
+                <input type="number" id="altMax_agregar" name="altMax">
+    
+                
+                <label for="autonomia_agregar" id="autonomia_agregar_label">Autonomia:</label>
+                <input type="text" id="autonomia_agregar" name="autonomia" >
+    
+                
+                <!-- <label for="goles_agregar" id="goles_agregar_label">Goles:</label>
+                <input type="number" id="goles_agregar" name="goles">
+     -->
+        
+        
+                <label for="cantPue_agregar" id="cantPue_agregar_label" style="display: none;">cantidad Puertas:</label>
+                <input type="text" id="cantPue_agregar" name="cantPue" style="display: none;">
+
+                <label for="cantRue_agregar" id="cantRue_agregar_label" style="display: none;">cantidad Ruedas:</label>
+                <input type="text" id="cantRue_agregar" name="cantRue" style="display: none;">
+
+                <!-- <label for="añoGraduacion_agregar" id="añoGraduacion_agregar_label" style="display: none;">añoGraduacion:</label>
+                <input type="number" id="añoGraduacion_agregar" name="añoGraduacion" style="display: none;">
+     -->
+
+            </div>
+
+            
+            
+            <button class="btn" id="btn_aceptar">Aceptar</button>
+            <button class="btn" id="btn_cancelar">Cancelar</button>
+
+            
+            <button class="btn" id="btn_aceptar_cambio">Aceptar Cambio</button>
+            <button class="btn" id="btn_cancelar_cambio">Cancelar Cambio</button>
+
+
+            <button class="btn" id="btn_aceptar_eliminacion">Aceptar Eliminacion</button>
+            <button class="btn" id="btn_cancelar_eliminacion">Cancelar Eliminacion</button>
+
+    
+    
+    
+        </form>
+    
+
+    <br />
+    <br />
+    
+    <label id="mensaje_error"></label>
+
+    <script src="archivo.js"></script>
+
+</body>
+</html>
